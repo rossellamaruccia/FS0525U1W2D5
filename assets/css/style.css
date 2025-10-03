@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  overflow: hidden;
 }
 
 footer,
@@ -9,41 +9,20 @@ header {
   text-decoration: none;
 }
 
+footer {
+  text-align: center;
+}
+
+footer img {
+  width: 8%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 main {
   background-color: #eaedee;
   width: 100%;
   margin: 0;
-}
-
-main section {
-  text-align: center;
-}
-
-.bg-orange {
-  color: #eaeded;
-  background-color: #f56600;
-  text-align: center;
-  padding: 1rem auto;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-top: 0.5%;
-}
-
-.bg-image {
-  background-image: url(../images/bg-image.png);
-  padding: 3em auto;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-bottom: 0.5%;
-}
-
-.bg-dark {
-  color: #eaeded;
-  background-color: #364759;
-}
-
-.bg-dark a {
-  text-decoration: none;
 }
 
 h1 {
@@ -51,6 +30,7 @@ h1 {
   font-weight: bold;
   font-size: 2em;
   line-height: 1.5em;
+  padding-bottom: 0.7em;
 }
 
 h3 {
@@ -60,31 +40,90 @@ h3 {
   line-height: 1.2em;
 }
 
-#big {
+p {
+  font-size: 1em;
+  display: inline;
+  text-align: left;
+  margin-left: 2em;
+  margin-right: 1em;
+  line-height: 2em;
+}
+
+.bg-orange {
+  background-color: #f56600;
+  text-align: center;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   width: 95%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-#big image {
-  width: 200px;
-}
-
-#cards {
-  background-color: #ffffff;
+.bg-image {
+  background-image: url(../images/bg-image.png);
+  padding-top: 3em;
+  padding-bottom: 3em;
   width: 95%;
   margin-left: 2.5%;
   margin-bottom: 0.5%;
+  text-align: center;
+}
+
+.bg-dark {
+  text-align: center;
+  background-color: #364759;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bg-dark a {
+  color: #eaeded;
+  text-decoration: underline;
+}
+
+.bg-clear {
+  background-color: #ffffff;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+a {
+  font-weight: 700;
+  color: #106165;
+  text-decoration: none;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1%;
 }
 
 #cards img {
   width: 20%;
   border-radius: 5%;
-  margin-right: 1px;
+  box-shadow: 5px 10px 10px #88888865;
+  margin-top: 1em;
 }
 
-#cards p {
-  display: inline-block;
-  text-align: left;
-  margin-right: 1em;
+.banners {
+  text-align: center;
+  margin-left: 2.5%;
+}
+
+.big {
+  width: 97.5%;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+}
+
+.big image {
+  max-width: 100%;
 }
 
 #logobanner {
